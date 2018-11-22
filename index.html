@@ -15,11 +15,28 @@
         img {
             max-width: 100%;
             vertical-align: top;
+            /* display: none; */
+        }
+        
+        img.responsive {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            img {
+                display: none;
+            }
+
+            img.responsive {
+                display: block;
+            }
         }
 
     </style>
 </head>
 <body>
+
+    <img src="invie-responsive.png" alt="" class="responsive">
     <img src="img/header.jpg" alt="">
     <img src="img/hero.jpg" alt="">
     <img src="img/acustica.jpg" alt="">
